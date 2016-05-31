@@ -1,5 +1,5 @@
 # Test Sm chatops
-This is a test project for SM Hubot Chatops https://github.hpe.com/ChatOps/hubot-integrations/tree/master/hubot-sm
+This is a test project for SM Hubot Chatops https://github.com/HPSoftware/hubot-sm
 
 ## Set up
 

@@ -1,0 +1,17 @@
+{
+  "config":{
+    "sm":{
+      "servers":{
+        "default":"advantageinc",
+        "advantageinc":{
+          "account":"System.Admin",
+          "endpoint":"16.187.186.51:13080"
+        },
+        "advantageinc-demo":{
+          "endpoint":"172.16.239.150:13080",
+          "account":"System.Admin"
+        }
+      }
+    }
+  }
+}

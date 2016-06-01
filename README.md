@@ -1,5 +1,5 @@
-# Introduction
-This is a boot project for SM Hubot ChatOps https://github.com/HPSoftware/hubot-sm
+# Test Sm chatops
+This is a test project for SM Hubot Chatops https://github.com/HPSoftware/hubot-sm
 
 ## Set up
 

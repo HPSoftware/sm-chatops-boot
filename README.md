@@ -1,4 +1,4 @@
-# Test Sm chatops
+# Introduction
 This is a test project for SM Hubot Chatops https://github.com/HPSoftware/hubot-sm
 
 ## Set up

@@ -101,7 +101,7 @@ Get your tokens in data/smbot.json file
 
 7.update the startsmbot.bat or startsmbot.sh.
   used startsmbot.bat as exmaple
-```
+```shell
 set HTTP_PROXY=<your proxy>  
 set HTTPS_PROXY=<your proxy>  
 set CONFIG_FILE=./config.json   
@@ -109,9 +109,8 @@ set SLACK_APP_TOKEN=<your api token from smbot.json>
 set HUBOT_SLACK_TOKEN=<your bot token from smbot.json>
 set sm_servers_<your SM server name from config.json>_password=<your sm password>  
 ```  
-
-8. run `npm install`  
-9. start `startsmbot.bat` or `startsmbot.sh`  
+8.run `npm install`  
+9.start `startsmbot.bat` or `startsmbot.sh`  
 
 
 

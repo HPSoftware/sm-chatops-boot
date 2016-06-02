@@ -6,8 +6,8 @@ Installation of SM ChatOps modules is fairly easy. You can find the Administrati
 
 
 ## Create a slack team  
-Before you begin, create a slack team. 
-1.Go to www.slack.com.
+Before you begin, create a slack team.   
+1.Go to www.slack.com.  
 2.Click Create a new team to create your slack team with your business email address.
 
 Example:
@@ -82,23 +82,23 @@ info: ** Configuring app as a Slack App!
 info: ** Starting webserver on port 4000   
 info: ** Serving login URL: http://MY_HOST:4000/login   
 info: ** Serving oauth return endpoint: http://MY_HOST:4000/oauth
-```  
-3. Visit the following URL from your browser: [http://localhost:4000](http://localhost:4000)  
-4. Click **Add to Slack**
-5. Confirm that you are adding the SM bot to the right team, and then click Authorize.  
+```   
+
+3.Visit the following URL from your browser: [http://localhost:4000](http://localhost:4000)    
+4.Click ** Add to Slack**  
+5.Confirm that you are adding the SM bot to the right team, and then click Authorize.  
   Once the authorization process is successfully complete, your browser returns a "Success!" message, and the command line console returns the following  messages: 
 ```  
 Slack App is successfully installed   
 Get your tokens in data/smbot.json file  
-```    
-
-6. open data/smbot.json file in the text editor to get indidual slack token.
-  the content of this file should look like the following:
-```  
-
-{"id":"smbot","apiToken":"xoxp-43844883909-43836899238-45600533889-63f799bda4","botToken":"xoxb-45587005878-aFuCQKKLkuxw4KOoMvS4Rfa3"}
 ```     
 
+6.open data/smbot.json file in the text editor to get indidual slack token.
+  the content of this file should look like the following:
+```    
+
+{"id":"smbot","apiToken":"xoxp-43844883909-43836899238-45600533889-63f799bda4","botToken":"xoxb-45587005878-aFuCQKKLkuxw4KOoMvS4Rfa3"}
+```      
 7.update the startsmbot.bat or startsmbot.sh.
   used startsmbot.bat as exmaple
 ```shell

@@ -2,40 +2,29 @@
 
 ## Required components
 
-Installation of SM ChatOps modules is fairly easy. What you need are following components
+Installation of SM ChatOps modules is fairly easy. You can find the Administration and User Guide on [HPE Live Network](https://hpln.hpe.com/product/chatops/content)
 
-1. **SM ChatOps `unload`**: with a simple integration for SM to send messages to ChatOps tools via webbooks.
-  * It also includes a few example configurations
-  * _At current moment, you can download it from [here](https://github.hpe.com/IncubationLab/sm-chatops-slack/tree/master/smslack)._
-  * Only SM **9.41** is tested for now.
-  * In the future, this will be released via HPLN.
-1. **SM Hubot scripts**: a `npm` package with ChatOps commands, integration and examples.
-  * _At current moment, you can download it from [here](https://github.hpe.com/ChatOps/hubot-integrations/tree/master/hubot-sm)._
-  * In the future, the `npm` package will be published into public registry and released under open source license.
 
-## Configure SM 9.41
+## Create a slack team  
+Before you begin, create a slack team. 
+1.Go to www.slack.com.
+2.Click Create a new team to create your slack team with your business email address.
 
-> Before doing that, you need to patch your SM 9.41 with the unload
+Example:
+https://smie.slack.com
 
-Customers configure SM ChatOps integration using PD JS Rule by following following steps
 
-1. Add a new RuleSet at selected phase of PD
-1. Config the Rule condition
-  - Example `( CI Identifier in Primary Affected Service in CurrentRecord = "CI11082")`
-1. Add a simple configuration in the script area
+## Install required third-party software  
+- NodeJS  
+- Git   
+- Chrome (IE 11 )
+- Python 2.7 
+- VS C++ Builder 
 
-```js
-var cfg = {
-  webhook_url: "", //webhook_url to your slack Team
-  room: "", // the name of the room you want this message is sent to
-  docengine_url: true,
-  message: "Incident ${number} - ${brief.description} is updated." //message format
-}
+**Note: for Windows NodeJS environment setup, you can follow up [instructions guide](https://github.com/Microsoft/nodejs-guidelines/blob/master/windows-environment.md#compiling-native-addon-modules) from Microsoft
+**
 
-lib.slack.send(record, cfg);
-```
-
-More advanced configuration can be found [here](https://github.hpe.com/IncubationLab/sm-chatops-slack/blob/keke-refactor/smslack/doc/config.md).
+## Install and configure Hubot  
 
 
 ## Set up a demo Hubot App

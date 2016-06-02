@@ -25,6 +25,44 @@ https://smie.slack.com
 **
 
 ## Install and configure Hubot  
+Hubot is an open source chat robot for your organization. It runs on Node.js and is easy to program with simple scripts written in CoffeeScript. Service Manager ChatOps allows your Hubot instance to connect and interact with your Slack team.
+
+The SM Hubot package contains Hubot scripts that are required by Slack. After the installation of these scripts, you can configure one or more Service Manager (SM) servers and specify a RESTFul web service account for the SM bot (chat robot) to access Service Manager. People who are invited to your Slack team can then send commands to the SM bot to perform operations in Service Manager in an automated way.
+Complete the following tasks to install and set up Hubot.
+
+### Task 1 Install Hubot and configure SM server connection infomation
+1. open configure.json file in a editor
+2. in the "sm" section,specify a RESTful Web Service integration account for the SM bot(chat bot) to access your Service Manager system, and specify the host name and port for SM server.
+   The following is an example
+```js
+{
+  "config" : {
+    "sm" : {
+      "servers" : {
+        "default" : "hpe",
+        "hpe" : {
+          "account" : "System.Admin",
+          "endpoint" : "16.187.231.2:13080"
+        },
+        "advantageinc-demo" : {
+          "endpoint" : "xxx.xx.xxx.xxx:13080",
+          "account" : "System.Admin"
+        }
+      }
+    }
+  }
+}
+```
+In this example, the default SM server is named hpe,the RESTFul web service configuration account is System.Admin, and the host and port are 16.187.231.2 and 13080.
+3. Continue to run the following command to install Coffee-Script
+```
+npm install -g coffee-script
+```
+
+### Task 2 Create a private Slack App
+  You need to create a private Slack app to obtain a clientId and clientSecret, which are required to enable the SM bot to access your Slack team.
+1. Visit this URL: [https://api.slack.com/slack-apps](https://api.slack.com/slack-apps)
+2. Go to the **Create an app section**, and then click **Create your Slack app**.
 
 
 ## Set up a demo Hubot App

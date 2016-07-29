@@ -32,7 +32,7 @@ dataStore.get name, (err, data)->
       {
         clientId: process.env.clientId,
         clientSecret: process.env.cs,
-        scopes: ['bot','channels:write', 'channels:history', 'groups:write', 'groups:history'],
+        scopes: ['bot','channels:write', 'channels:history', 'groups:write', 'groups:history','users:read'],
       }
     )
     # port = process.env.port;
